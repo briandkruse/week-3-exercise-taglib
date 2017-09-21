@@ -30,15 +30,17 @@ public class DisplayWelcomeMessage extends SimpleTagSupport {
             out.println("Welcome home, and welcome to my site!");
         } else if(time > 19 && time <= 22) {
             out.println("Slow down for the night and enjoy a few articles!");
-        } else if((time > 22 && time <= 24) || time == 1 || time == 2) {
+        } else if((time > 22 && time < 24) || time == 1 || time == 2) {
             out.println("Late night is the right time. Welcome!");
         }
 
-        if (date == "09 20") {
+        String weekFourClassMessage = "Week 4 Class";
+        String dateWeekFourClass = "09 20";
+        if (date.equals("09 20")){
             out.println("Class today!");
         }
-        if (date == "10 05") {
-            out.println("Today Foo Fighers are at the Kohl Center!");
+        if (date.equals("10 05")) {
+            out.println("Today Foo Fighters are at the Kohl Center!");
         }
 
     }
